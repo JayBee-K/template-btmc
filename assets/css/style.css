@@ -1,0 +1,90 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a, a:hover, a:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+}
+
+input,
+select,
+textarea {
+    -o-transition: var(--transition);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%) !important;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%) !important;
+    outline: none !important;
+}
+
+a,
+button {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.row-g1 {
+    margin-top: calc(-1 * 10px);
+}
+
+.row-g1 > [class*=col] {
+    margin-top: 10px;
+}
+
+.row-g2 {
+    margin-top: calc(-1 * 20px);
+}
+
+.row-g2 > [class*=col] {
+    margin-top: 20px;
+}
+
+.row-g3 {
+    margin-top: calc(-1 * 30px);
+}
+
+.row-g3 > [class*=col] {
+    margin-top: 30px;
+}
+
+.row-g4 {
+    margin-top: calc(-1 * 40px);
+}
+
+.row-g4 > [class*=col] {
+    margin-top: 40px;
+}
+
+.row-g5 {
+    margin-top: calc(-1 * 50px);
+}
+
+.row-g5 > [class*=col] {
+    margin-top: 50px;
+}
+
+.row-g6 {
+    margin-top: calc(-1 * 60px);
+}
+
+.row-g6 > [class*=col] {
+    margin-top: 60px;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--dark-color);
+    font: 400 14px/1.3 'Open Sans', sans-serif;
+}
