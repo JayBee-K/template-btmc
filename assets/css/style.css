@@ -104,6 +104,83 @@ body {
     z-index: 3;
 }
 
+.header .header-inner .header-inner_nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.header .header-inner .header-inner_nav > ul > li {
+    position: relative;
+    padding: 10px 0;
+}
+
+.header .header-inner .header-inner_nav > ul > li > a {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: var(--dark-color);
+    display: inline-block;
+    padding: 20px 15px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    position: relative;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.header .header-inner .header-inner_nav > ul > li > a > i {
+    margin-left: 2px;
+    font-size: 1.1em;
+    transition: .3s transform ease-in-out;
+}
+
+.header .header-inner .header-inner_nav > ul > li > ul {
+    box-shadow: 0 0 20px rgb(68 38 14 / 25%);
+    position: absolute;
+    top: 100%;
+    transform: translateY(15px);
+    background-color: var(--white);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--transition);
+    min-width: 200px;
+}
+
+.header .header-inner .header-inner_nav > ul > li > ul > li > a {
+    position: relative;
+    display: block;
+    border-left: 3px solid transparent;
+    padding: 10px 15px;
+    white-space: nowrap;
+    font-size: 1.15em;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.header .header-inner .header-inner_nav > ul > li:hover > a {
+    color: rgb(var(--primary-color));
+}
+
+.header .header-inner .header-inner_nav > ul > li:hover > a > i {
+    transform: rotate(180deg)
+}
+
+.header .header-inner .header-inner_nav > ul > li:hover > ul {
+    transform: translateY(0);
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .header-inner .header-inner_nav > ul > li > ul > li:hover > a {
+    color: rgb(var(--primary-color));
+    border-color: rgb(var(--primary-color));
+    background-color: var(--background-body);
+}
+
 .section-banner {
     position: relative;
     overflow: hidden;
