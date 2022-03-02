@@ -97,6 +97,13 @@ body {
     font: 400 14px/1.2 'Roboto', sans-serif;
 }
 
+.header {
+    position: relative;
+    background-color: var(--white);
+    border-bottom: 3px solid rgba(var(--primary-color));
+    z-index: 3;
+}
+
 .section-banner {
     position: relative;
     overflow: hidden;
@@ -276,5 +283,5 @@ body {
 }
 
 .service-card:hover .card-body .card-title {
-    color: rgba(var(--primary-color), .9);
+    color: var(--text-color);
 }
