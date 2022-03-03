@@ -4,18 +4,16 @@ const handleTouchMove = function (ev) {
 }
 
 const slideBanner = function () {
-	new Swiper('#slideBanner .swiper', {
-		speed: 1500,
-		slidesPerView: 1,
-		effect: 'fade',
+	new Swiper('#slideBanner', {
+		loop: false,
+		speed: 500,
+		navigation: {
+			nextEl: '#slideBanner .slide-button-next',
+			prevEl: '#slideBanner .slide-button-prev',
+		},
 		autoplay: {
 			delay: 10000,
 			disableOnInteraction: false,
-			pauseOnMouseEnter: true,
-		},
-		navigation: {
-			nextEl: '#slideBanner .button-next',
-			prevEl: '#slideBanner .button-prev',
 		},
 	});
 }
