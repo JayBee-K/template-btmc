@@ -262,6 +262,10 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .header .header-inner .header-inner_logo {
         position: relative;
         padding: 10px 0;
