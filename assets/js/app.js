@@ -11,12 +11,14 @@ const navigationMobile = function (e) {
 			});
 
 			$(this).prev().find('i').remove();
-			$(this).prev().append(`<span><i class="fal fa-plus"></i></span>`);
+			$(this).prev().append(`<span><i class="far fa-plus"></i></span>`);
 			$(this).attr({
 				"id": "subMenuTopUp" + index,
 				"class": "collapse list-unstyled mb-0",
 				"data-parent": "#hasMenuTopUp"
 			});
+
+			$(this).find('a').prepend('<i class="far fa-angle-right"></i>');
 		})
 
 		/*
