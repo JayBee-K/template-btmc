@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Bảo Tín Minh Châu</title>
+    <meta name="description" content="Template Telco">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Telco">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Telco">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+
+    <style>
+        :root {
+            /*--primary-color: 155, 1, 1;*/
+            /*--background-body: #fff8f7;*/
+            --primary-color: 94, 45, 134;
+            --background-body: #f7f6fb;
+            --dark-color: #1f1d1d;
+            --text-color: #994e0a;
+            --gray-color: #8c8484;
+            --transition: .3s all ease-in-out;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <div class="header-inner_logo">
+                        <a href="index.html" class="d-inline-block">
+                            <img class="img-fluid" src="./assets/images/logo-white.png">
+                        </a>
+                        <div id="user-mobile" class="header-inner_mobile__user ml-auto d-none">
+                            <a id="call-user_mobile" class="btn btn-customize" href="javascript:void(0)">
+                                Tài khoản
+                            </a>
+                            <div class="header-mobile_user__inner">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="logo">
+                                        <a href="index.html">
+                                            <img src="./assets/images/logo.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dang-nhap.html">Đăng nhập</a>
+                                    </li>
+                                    <li>
+                                        <a href="dang-ky.html">Đăng ký</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Quên mật khẩu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-inner_hamburger ml-2 d-block d-lg-none">
+                            <button type="button" class="no-animation" id="call-header_mobile">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 mobile-no_relative">
+                    <div class="d-lg-flex align-items-center justify-content-end flex-wrap">
+                        <div class="header-inner_nav">
+                            <ul class="list-unstyled mb-0" id="hasMenuTopUp">
+                                <li class="logo d-lg-none">
+                                    <a href="index.html">
+                                        <img src="./assets/images/logo-white.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        Trang chủ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Dịch vụ chuyển tiền quốc tế
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tin-tuc.html">
+                                        Tin tức
+                                        <i class="far fa-angle-down"></i>
+                                    </a>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Danh mục tin tức
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Danh mục tin tức
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tin-tuc.html">
+                                                Danh mục tin tức
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Các thắc mắc
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-inner_user d-none align-items-center justify-content-end">
+                            <div class="header-inner_user__item d-none">
+                                <a href="javascript:void(0)" class="btn btn-customize">
+                                    Đăng nhập <i class="fas fa-lock-alt ml-1"></i>
+                                </a>
+                            </div>
+                            <div class="header-inner_user__item">
+                                <a href="javascript:void(0)" class="btn btn-customize">
+                                    Tài khoản <i class="fas fa-user-alt ml-1"></i>
+                                </a>
+                                <div class="user-item_dropdown">
+                                    <a href="">Thông tin tài khoản</a>
+                                    <a href="">Nạp tiền</a>
+                                    <a href="">Chuyển tiền</a>
+                                    <a href="">Đổi mật khẩu</a>
+                                    <a href="">Đăng xuất</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-overlay d-block d-lg-none" id="header-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+    <div class="page-form">
+        <div class="section-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page"><span>Hướng dẫn chuyển tiền</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-heading">
+                            <h1 class="section-heading_title mb-0">
+                                <span>Thanh toán tiền</span>
+                                Quốc tế
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="form-content">
+                            <div class="form-content_title">
+                                Điền thông tin vào biểu mẫu bên dưới
+                            </div>
+                            <div class="form-inner">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="">
+                                            Chọn ngân hàng
+                                        </label>
+                                        <select name="" id="" class="form-control">
+                                            <option value="-1">
+                                                Chọn ngân hàng
+                                            </option>
+                                            <option value="">Vietcombank</option>
+                                            <option value="">BIDV</option>
+                                            <option value="">Techcombank</option>
+                                            <option value="">MBbank</option>
+                                            <option value="">Sacombank</option>
+                                            <option value="">Vietinbank</option>
+                                            <option value="">Đông Á</option>
+                                            <option value="">Sea Banh</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">
+                                            Chọn tiền tệ
+                                        </label>
+                                        <select name="" id="selTienTe" class="form-control">
+                                            <option value="-1">Chọn tiền tệ cần thanh toán</option>
+                                            <option value="jp" data-code="￥">Nhật Bản
+                                            </option>
+                                            <option value="vi" data-code="₫">Việt Nam
+                                            </option>
+                                            <option value="tw" data-code="$">Đài Loan
+                                            </option>
+                                            <option value="kr" data-code="₩">Hàn Quốc
+                                            </option>
+                                            <option value="cn" data-code="元">Trung Quốc
+                                            </option>
+                                            <option value="sn" data-code="$">Singapore
+                                            </option>
+                                            <option value="au" data-code="$">Australia
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="d-flex align-items-center justify-content-between" for="">Số tiền
+                                            cần
+                                            thanh toán <span class="ml-auto" id="tiente"></span></label>
+                                        <input type="text" class="form-control"
+                                               placeholder="Nhập số tiền cần thanh toán">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Tên người thanh toán</label>
+                                        <input type="text" class="form-control" placeholder="Nhập tên người thanh toán">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Số tài khoản người nhận thanh toán</label>
+                                        <input type="text" class="form-control"
+                                               placeholder="Nhập số tài khoản người nhận thanh toán">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Nội dung thanh toán</label>
+                                        <textarea name="" id="" rows="4" class="form-control"
+                                                  placeholder="Nhập nội dung thanh toán"></textarea>
+                                    </div>
+                                    <div class="text-center mt-5">
+                                        <button type="submit" class="btn btn-customize">Gửi yêu cầu</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-4 mt-lg-0">
+                        <div class="form-content">
+                            <div class="form-content_title">
+                                Hướng dẫn <span>thanh toán</span>
+                            </div>
+                            <div class="form-content_list">
+                                <div class="form-content_list__item">
+                                    <div class="content-item_icon">
+                                        1
+                                    </div>
+                                    <div class="content-item_desc">
+                                        <div class="content-item_desc__title">
+                                            Hướng dẫn gửi tiền 01
+                                        </div>
+                                        <div class="contact-item_desc__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit libero
+                                                obcaecati quidem, repudiandae sapiente?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-content_list__item">
+                                    <div class="content-item_icon">
+                                        2
+                                    </div>
+                                    <div class="content-item_desc">
+                                        <div class="content-item_desc__title">
+                                            Hướng dẫn gửi tiền 02
+                                        </div>
+                                        <div class="contact-item_desc__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                                asperiores
+                                                aspernatur culpa dignissimos, dolore et eum impedit in incidunt ipsa
+                                                minus
+                                                molestias recusandae, suscipit temporibus?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-content_list__item">
+                                    <div class="content-item_icon">
+                                        3
+                                    </div>
+                                    <div class="content-item_desc">
+                                        <div class="content-item_desc__title">
+                                            Hướng dẫn gửi tiền 03
+                                        </div>
+                                        <div class="contact-item_desc__content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+                                                asperiores
+                                                aspernatur culpa dignissimos, dolore et eum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-logo">
+                    <a href="">
+                        <img src="./assets/images/logo-white.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 my-3">
+                <div class="footer-item">
+                    <div class="footer-contact">
+                        <div class="footer-title">
+                            Công ty TNHH Bảo Tín Minh Châu
+                        </div>
+                        <div class="footer-contact_list">
+                            <p>
+                                Trụ sở chính: Số 29 Trần Nhân Tông, phường Nguyễn Du, quận Hai Bà Trưng, Thành phố Hà
+                                Nội.
+                            </p>
+                            <p>
+                                Điện thoại: 0247.305.6899
+                            </p>
+                            <p>
+                                Email: cskh@btmc.vn
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3">
+                <div class="footer-item">
+                    <div class="footer-title">
+                        Menu Footer
+                    </div>
+                    <div class="footer-list">
+                        <p>
+                            <a href="">Link menu footer 01</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 02</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 03</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 04</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 05</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3">
+                <div class="footer-item">
+                    <div class="footer-title">
+                        Menu Footer
+                    </div>
+                    <div class="footer-list">
+                        <p>
+                            <a href="">Link menu footer 01</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 02</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 03</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 04</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 05</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3">
+                <div class="footer-item">
+                    <div class="footer-title">
+                        Menu Footer
+                    </div>
+                    <div class="footer-list">
+                        <p>
+                            <a href="">Link menu footer 01</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 02</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 03</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 04</a>
+                        </p>
+                        <p>
+                            <a href="">Link menu footer 05</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/select2/js/select2.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
