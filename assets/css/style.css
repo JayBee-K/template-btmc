@@ -1067,7 +1067,7 @@ body {
     align-items: center;
 }
 
-.section-calculator .calculator-main .calculator-card .card-body .card-content .card-value .card-value_code{
+.section-calculator .calculator-main .calculator-card .card-body .card-content .card-value .card-value_code {
     font-size: 1.8em;
     font-weight: 700;
     color: rgb(var(--primary-color));
@@ -1368,4 +1368,181 @@ body {
 
 .footer .footer-item .footer-list p a:hover:before {
     background: var(--white);
+}
+
+.page-gap {
+    padding: 30px 0;
+}
+
+.dmbv-card {
+    border: 0;
+    border-radius: 8px;
+    flex-direction: row;
+    box-shadow: 0 0 14px rgb(144 151 179 / 19%) !important;
+    overflow: hidden;
+    height: auto;
+}
+
+.dmbv-card .card-header {
+    padding: 0;
+    width: 33%;
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+.dmbv-card .card-header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.dmbv-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.dmbv-card .card-body .card-title {
+    margin-bottom: 8px;
+}
+
+.dmbv-card .card-body .card-title a {
+    color: var(--dark-color);
+    font-size: 1.25em;
+    line-height: 1.3;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.dmbv-card .card-body .card-meta {
+    font-size: 1em;
+    color: var(--gray-color);
+    margin-bottom: 8px;
+}
+
+.dmbv-card .card-body .card-desc {
+    margin-bottom: 8px;
+    color: var(--gray-color);
+    font-size: 1.1em;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.dmbv-card .card-body .card-link {
+    margin-top: auto;
+}
+
+.dmbv-card .card-header:hover img {
+    opacity: .8;
+    transform: scale(1.05);
+}
+
+.dmbv-card .card-body .card-title a:hover {
+    color: rgb(var(--primary-color));
+}
+
+.dmbv-card + .dmbv-card {
+    margin-top: 25px;
+}
+
+.section-pagination {
+    margin-top: 30px;
+}
+
+.section-pagination .pagination {
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.section-pagination .pagination .page-item {
+    margin: 0 4px;
+}
+
+.section-pagination .pagination .page-item .page-link {
+    border-radius: 4px;
+    min-width: 36px;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: var(--dark-color);
+    font-weight: 600;
+    box-shadow: 0 0 14px rgb(144 151 179 / 19%) !important;
+}
+
+.section-pagination .pagination .page-item.pageactive .page-link {
+    background: rgb(var(--primary-color));
+    color: var(--white);
+}
+
+.section-breadcrumb {
+    background: var(--white);
+}
+
+.section-breadcrumb .breadcrumb {
+    margin-bottom: 0;
+    border-radius: 0;
+    background: var(--white);
+    padding: 0;
+}
+
+.section-breadcrumb .breadcrumb > li {
+    font-size: 1.05em;
+    font-weight: 700;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-breadcrumb .breadcrumb > li > span,
+.section-breadcrumb .breadcrumb > li > a {
+    padding: 12px 0;
+    display: inline-block;
+    color: var(--dark-color);
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.section-breadcrumb .breadcrumb > li > span {
+    font-weight: 400;
+}
+
+.section-breadcrumb .breadcrumb > li + li {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.section-breadcrumb .breadcrumb > li + li:before {
+    position: absolute;
+    font-family: "Font Awesome 5 Pro";
+    content: "\f105";
+    display: block;
+    top: calc(50% - 2px);
+    left: -3px;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+    color: var(--gray-color);
+    font-weight: 300;
+    padding-right: 0;
+    float: none;
+}
+
+.section-breadcrumb .breadcrumb > li > a:hover {
+    color: rgb(var(--primary-color));
 }
