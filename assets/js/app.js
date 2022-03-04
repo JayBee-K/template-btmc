@@ -85,23 +85,67 @@ const clickOverlayMobile = function () {
 	});
 }
 const slideBanner = function () {
-	new Swiper('#slideBanner', {
-		loop: false,
-		speed: 500,
-		navigation: {
-			nextEl: '#slideBanner .slide-button-next',
-			prevEl: '#slideBanner .slide-button-prev',
-		},
+	new Swiper('#slideBanner .swiper', {
+		speed: 1000,
+		slidesPerView: 1,
+		effect: 'fade',
 		autoplay: {
 			delay: 10000,
 			disableOnInteraction: false,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: '#slideBanner .button-next',
+			prevEl: '#slideBanner .button-prev',
 		},
 	});
 }
+
+const selChuyenTien = function () {
+	$('#sel-chuyen').change(function () {
+		let elm = $(this);
+		let boxChuyen = $('#content-chuyen');
+		if (elm.val() != -1) {
+			boxChuyen.find('#flag-chuyen').attr('src', elm.find('option:selected').attr('data-flag'));
+			boxChuyen.find('#name-chuyen').html(elm.find('option:selected').attr('data-name'));
+			boxChuyen.find('#value-code_chuyen').html(elm.find('option:selected').attr('data-code'));
+			boxChuyen.slideDown();
+		} else {
+			boxChuyen.slideUp(function () {
+				boxChuyen.find('#flag-chuyen').attr('src', '');
+				boxChuyen.find('#name-chuyen').html('');
+				boxChuyen.find('#value-code_chuyen').html('');
+			});
+		}
+	});
+}
+
+const submitTinhThu = function () {
+	$('#frmTinhThu').submit(function (e) {
+		let selChuyenTien = $('#sel-chuyen');
+		let selNhanTien = $('#sel-nhan');
+		let inputChuyenTien = $('#value-chuyen');
+		if (selChuyenTien.val() == -1 || selNhanTien.val() == -1 || inputChuyenTien.val() < 1) {
+			alert('Vui lòng chọn tiền tệ và số tiền cần chuyển');
+		} else {
+			let boxNhan = $('#content-nhan');
+			let selNhan = $('#sel-nhan');
+			boxNhan.find('#flag-nhan').attr('src', selNhan.find('option:selected').attr('data-flag'));
+			boxNhan.find('#name-nhan').html(selNhan.find('option:selected').attr('data-name'));
+			boxNhan.find('#value-code_nhan').html(selNhan.find('option:selected').attr('data-code'));
+			boxNhan.find('#preview-nhan').val('99999999');
+			boxNhan.slideDown();
+		}
+		return false;
+	})
+}
+
 
 $(function () {
 	navigationMobile();
 	userMobile();
 	clickOverlayMobile();
 	slideBanner();
+	selChuyenTien();
+	submitTinhThu();
 });
