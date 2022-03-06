@@ -48,7 +48,7 @@
                 <div class="col-lg-2">
                     <div class="header-inner_logo">
                         <a href="index.html" class="d-inline-block">
-                            <img class="img-fluid" src="./assets/images/logo-white.png">
+                            <img class="img-fluid" src="./assets/images/logo.png">
                         </a>
                         <div id="user-mobile" class="header-inner_mobile__user ml-auto d-none">
                             <a id="call-user_mobile" class="btn btn-customize" href="javascript:void(0)">
@@ -88,7 +88,7 @@
                             <ul class="list-unstyled mb-0" id="hasMenuTopUp">
                                 <li class="logo d-lg-none">
                                     <a href="index.html">
-                                        <img src="./assets/images/logo-white.png" alt="">
+                                        <img src="./assets/images/logo.png" alt="">
                                     </a>
                                 </li>
                                 <li>
@@ -193,132 +193,103 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-12">
                         <div class="form-content">
                             <div class="form-content_title">
                                 Điền thông tin vào biểu mẫu bên dưới
                             </div>
                             <div class="form-inner">
                                 <form action="">
-                                    <div class="form-group">
-                                        <label for="">
-                                            Chọn ngân hàng
-                                        </label>
-                                        <select name="" id="" class="form-control">
-                                            <option value="-1">
-                                                Chọn ngân hàng
-                                            </option>
-                                            <option value="">Vietcombank</option>
-                                            <option value="">BIDV</option>
-                                            <option value="">Techcombank</option>
-                                            <option value="">MBbank</option>
-                                            <option value="">Sacombank</option>
-                                            <option value="">Vietinbank</option>
-                                            <option value="">Đông Á</option>
-                                            <option value="">Sea Banh</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">
-                                            Chọn tiền tệ
-                                        </label>
-                                        <select name="" id="selTienTe" class="form-control">
-                                            <option value="-1">Chọn tiền tệ cần chuyển</option>
-                                            <option value="jp" data-code="￥">Nhật Bản
-                                            </option>
-                                            <option value="vi" data-code="₫">Việt Nam
-                                            </option>
-                                            <option value="tw" data-code="$">Đài Loan
-                                            </option>
-                                            <option value="kr" data-code="₩">Hàn Quốc
-                                            </option>
-                                            <option value="cn" data-code="元">Trung Quốc
-                                            </option>
-                                            <option value="sn" data-code="$">Singapore
-                                            </option>
-                                            <option value="au" data-code="$">Australia
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="d-flex align-items-center justify-content-between" for="">Số tiền
-                                            cần
-                                            chuyển <span class="ml-auto" id="tiente"></span></label>
-                                        <input type="text" class="form-control" placeholder="Nhập số tiền cần chuyển">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Tên người nhận</label>
-                                        <input type="text" class="form-control" placeholder="Nhập tên người nhận">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Số tài khoản người nhận</label>
-                                        <input type="text" class="form-control"
-                                               placeholder="Nhập số tài khoản người nhận">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Nội dung chuyển tiền</label>
-                                        <textarea name="" id="" rows="4" class="form-control"
-                                                  placeholder="Nhập nội dung chuyển tiền"></textarea>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">
+                                                    Chọn quốc gia chuyển tiền
+                                                </label>
+                                                <select name="" id="selQuocGia" class="form-control">
+                                                    <option value="-1">
+                                                        Chọn quốc gia chuyển tiền
+                                                    </option>
+                                                    <option value="jp">Nhật Bản</option>
+                                                    <option value="vn">Việt Nam</option>
+                                                    <option value="tw">Đài Loan</option>
+                                                    <option value="kr">Hàn Quốc</option>
+                                                    <option value="cn">Trung Quốc</option>
+                                                    <option value="sn">Singapore</option>
+                                                    <option value="au">Australia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">
+                                                    Chọn ngân hàng
+                                                </label>
+                                                <select name="" id="selNganHang" class="form-control">
+                                                    <option value="-1">Chọn ngân hàng</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">
+                                                    Chọn tiền tệ
+                                                </label>
+                                                <select name="" id="selTienTe" class="form-control">
+                                                    <option value="-1">Chọn tiền tệ cần chuyển</option>
+                                                    <option value="jp" data-code="￥">Nhật Bản
+                                                    </option>
+                                                    <option value="vi" data-code="₫">Việt Nam
+                                                    </option>
+                                                    <option value="tw" data-code="$">Đài Loan
+                                                    </option>
+                                                    <option value="kr" data-code="₩">Hàn Quốc
+                                                    </option>
+                                                    <option value="cn" data-code="元">Trung Quốc
+                                                    </option>
+                                                    <option value="sn" data-code="$">Singapore
+                                                    </option>
+                                                    <option value="au" data-code="$">Australia
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="d-flex align-items-center justify-content-between" for="">Số
+                                                    tiền
+                                                    cần
+                                                    chuyển <span class="ml-auto" id="tiente"></span></label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Nhập số tiền cần chuyển">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Tên người nhận</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Nhập tên người nhận">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="">Số tài khoản người nhận</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Nhập số tài khoản người nhận">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="">Nội dung chuyển tiền</label>
+                                                <textarea name="" id="" rows="4" class="form-control"
+                                                          placeholder="Nhập nội dung chuyển tiền"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="text-center mt-5">
                                         <button type="submit" class="btn btn-customize">Gửi yêu cầu</button>
                                     </div>
                                 </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 mt-4 mt-lg-0">
-                        <div class="form-content">
-                            <div class="form-content_title">
-                                Hướng dẫn <span>gửi tiền</span>
-                            </div>
-                            <div class="form-content_list">
-                                <div class="form-content_list__item">
-                                    <div class="content-item_icon">
-                                        1
-                                    </div>
-                                    <div class="content-item_desc">
-                                        <div class="content-item_desc__title">
-                                            Hướng dẫn gửi tiền 01
-                                        </div>
-                                        <div class="contact-item_desc__content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit libero
-                                                obcaecati quidem, repudiandae sapiente?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-content_list__item">
-                                    <div class="content-item_icon">
-                                        2
-                                    </div>
-                                    <div class="content-item_desc">
-                                        <div class="content-item_desc__title">
-                                            Hướng dẫn gửi tiền 02
-                                        </div>
-                                        <div class="contact-item_desc__content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                                asperiores
-                                                aspernatur culpa dignissimos, dolore et eum impedit in incidunt ipsa
-                                                minus
-                                                molestias recusandae, suscipit temporibus?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-content_list__item">
-                                    <div class="content-item_icon">
-                                        3
-                                    </div>
-                                    <div class="content-item_desc">
-                                        <div class="content-item_desc__title">
-                                            Hướng dẫn gửi tiền 03
-                                        </div>
-                                        <div class="contact-item_desc__content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                                asperiores
-                                                aspernatur culpa dignissimos, dolore et eum.</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -334,7 +305,7 @@
             <div class="col-md-12">
                 <div class="footer-logo">
                     <a href="">
-                        <img src="./assets/images/logo-white.png" alt="">
+                        <img src="./assets/images/logo.png" alt="">
                     </a>
                 </div>
             </div>
